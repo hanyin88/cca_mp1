@@ -12,7 +12,7 @@ def get_socket():
 
 @app.post('/')
 def update_seed():
-    subprocess.Popen(["python", "stress_cpu.py"])
+    subprocess.Popen(["python3", "stress_cpu.py"])
     return "stress test with cpu started"
 
 if __name__ == '__main__':
